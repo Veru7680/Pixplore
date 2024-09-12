@@ -1,0 +1,76 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: #ffcccb; /* Rosado claro */
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 90%; /* Ajusta el ancho según tus necesidades */
+    max-width: 1200px; /* Máximo ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    
+}
+
+/* Primer contenedor (rosado claro) */
+.container {
+    background-color: #ffcccb; /* Rosado claro */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Segundo contenedor (más pequeño y centrado) */
+.container2 {
+    width: 100%; /* Ocupa todo el ancho del contenedor principal */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo de la caja de búsqueda */
+.search-box {
+    margin: 20px 0;
+}
+
+#BuscarI {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#BuscarB {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#BuscarB:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de los resultados de imagen */
+.image-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para las imágenes */
+.image-item {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tu preferencia */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
