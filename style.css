@@ -1,4 +1,3 @@
-/* Estilo global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,37 +6,34 @@ body {
 }
 
 /* Contenedor principal */
-.contenedor {
-    width: 90%; /* Ajusta el ancho según tus necesidades */
-    max-width: 1200px; /* Máximo ancho del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px;
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los contenedores principales */
+    padding: 10px;
 }
 
-/* Primer contenedor (rosado claro) */
+/* Estilo del contenedor de búsqueda (derecha) */
 .container {
     background-color: #ffcccb; /* Rosado claro */
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    width: 30%; /* Ajusta el ancho según tus necesidades */
 }
 
-/* Segundo contenedor (más pequeño y centrado) */
+/* Estilo del contenedor de imágenes (izquierda) */
 .container2 {
-    width: 100%; 
+    width: 2%; /* Ajusta el ancho según tus necesidades */
     padding: 20px;
-    display: flex;
-    justify-content: center; 
 }
 
 /* Estilo de la caja de búsqueda */
 .search-box {
-    margin: 20px 0;
+    margin:20px 0;
 }
 
 #BuscarI {
     padding: 10px;
-    width: 300px;
+    width: 80%; /* Asegura que el input ocupe todo el ancho disponible */
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
@@ -58,8 +54,9 @@ body {
     background-color: #0056b3;
 }
 
-
+/* Estilo de los resultados de imagen */
 .image-results {
+    width: 100%; /* Ocupa el ancho restante disponible */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -69,7 +66,7 @@ body {
 .image-item {
     width: 100%;
     height: 200px; /* Ajusta la altura según tu preferencia */
-    object-fit: cover; 
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
@@ -77,5 +74,5 @@ body {
 
 /* Efecto de zoom en la imagen al pasar el mouse */
 .image-item:hover {
-    transform: scale(1.5); /* Aumenta el tamaño de la imagen en un 10% */
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
 }
