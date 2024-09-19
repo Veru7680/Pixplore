@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixplore - Busca imágenes</title>
+    <title>Búsqueda de Imágenes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Contenedor principal -->
     <div class="main-container">
+        <!-- Contenedor de resultados de imágenes -->
+        <div class="container2">
+            <h1>Resultados de Imágenes</h1>
+            <div id="imageResults" class="image-results"></div>
+        </div>
+
         <!-- Contenedor de búsqueda -->
         <div class="container">
-            <h1>Pixplore</h1>
+            <h1>Buscar Imágenes</h1>
+
+            <!-- Caja de búsqueda -->
             <div class="search-box">
-                <input type="text" id="BuscarI" placeholder="Buscar imágenes...">
-                <br>
-                <br>
+                <input type="text" id="BuscarI" placeholder="Escribe algo...">
                 <button id="BuscarB">Buscar</button>
             </div>
 
-
+            <!-- Botones de categorías -->
+            <div class="category-buttons">
+                <button class="category-btn" data-category="animales">Animales</button>
+                <button class="category-btn" data-category="comida">Comida</button>
+                <button class="category-btn" data-category="paisaje">Paisaje</button>
+                <button class="category-btn" data-category="dibujos">Dibujos</button>
+            </div>
         </div>
-
-        <!-- Contenedor de imágenes -->
-        <div class="container2">
-           
-        </div>
-
-        <!-- Resultados de búsqueda de imágenes -->
-        <div id="imageResults" class="image-results"></div>
     </div>
 
     <script src="index.js"></script>
