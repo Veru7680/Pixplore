@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffcccb; /* Rosado claro */
+    background-color: #ffffff; /* Rosado claro */
 }
 
 /* Contenedor principal */
@@ -59,21 +59,28 @@ body {
     background-color: #0056b3;
 }
 
+/* Estilo de los botones de categoría *//* Estilo de los botones de categoría */
 /* Estilo de los botones de categoría */
 .category-buttons {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los botones se envuelvan en varias líneas */
+    justify-content: center; /* Centrar los botones horizontalmente */
 }
 
 .category-btn {
     padding: 10px 20px;
-    margin: 5px;
-    background-color: #28a745;
+    margin: 5px; /* Espacio entre los botones */
+    background-color: #ec7c7c;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    flex-basis: calc(50% - 10px); /* Cada botón ocupa el 50% del contenedor menos el margen */
+    max-width: calc(50% - 10px); /* Limitar el ancho máximo a la mitad del contenedor menos el margen */
 }
+
 
 .category-btn:hover {
     background-color: #218838;
