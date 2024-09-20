@@ -2,17 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Rosado claro */
+    background-color: #ffffff; 
 }
 
-/* Contenedor principal */
+
 .main-container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-/* Estilo del contenedor de búsqueda */
+
 .container {
     background-color: #fff;
     padding: 20px;
@@ -23,14 +23,15 @@ body {
 }
 
 .logo {
-    width:200px;  /* Ancho de la imagen */
-    height: 100px; /* Altura de la imagen */
-    display: block; /* Hace que la imagen sea un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width:200px; 
+    height: 100px;
+    display: block; 
+    margin: 0 auto; 
+}
+h1 {
+    font-family: 'Parisienne';
 }
 
-
-/* Estilo del contenedor de imágenes */
 .container2 {
     width: 65%;
     padding: 20px;
@@ -39,7 +40,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo de la caja de búsqueda */
+
 .search-box {
     margin: 20px 0;
 }
@@ -67,26 +68,28 @@ body {
     background-color: #0056b3;
 }
 
-/* Estilo de los botones de categoría *//* Estilo de los botones de categoría */
-/* Estilo de los botones de categoría */
+
 .category-buttons {
+    
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap; /* Permitir que los botones se envuelvan en varias líneas */
-    justify-content: center; /* Centrar los botones horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center;
+   
 }
 
 .category-btn {
+    font-family: 'Oleo Script';
     padding: 10px 20px;
-    margin: 5px; /* Espacio entre los botones */
+    margin: 5px; 
     background-color: #ec7c7c;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    flex-basis: calc(50% - 10px); /* Cada botón ocupa el 50% del contenedor menos el margen */
-    max-width: calc(50% - 10px); /* Limitar el ancho máximo a la mitad del contenedor menos el margen */
+    flex-basis: calc(50% - 10px);
+    max-width: calc(50% - 10px); 
 }
 
 
@@ -94,7 +97,7 @@ body {
     background-color: #218838;
 }
 
-/* Estilo de los resultados de imagen */
+
 .image-results {
     width: 100%;
     display: grid;
@@ -102,7 +105,7 @@ body {
     gap: 20px;
 }
 
-/* Estilo para las imágenes */
+
 .image-item {
     width: 100%;
     height: 200px;
@@ -112,7 +115,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Efecto de zoom en la imagen al pasar el mouse */
+
 .image-item:hover {
     transform: scale(1.1);
 }
